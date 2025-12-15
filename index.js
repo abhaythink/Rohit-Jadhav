@@ -1,12 +1,18 @@
 let btn = document.getElementById("btn");
-let body = document.getElementById("body");
+
 async function getPost() {
-    try{
+    try {
         const resp = await fetch('https://jsonplaceholder.typicode.com/posts');
         const data = await resp.json();
-        
+
+        const table = document.createElement('table');
+        table.setAttribute("border", 1);
+        const tr = document.createElement('tr');
+        tr.innerHTML = "<th>id</th><th>title</th><th>body</th>"
+        table.appendChild(tr);
+
+
         data.forEach(e => {
-            console.log(e);
             const row = document.createElement("tr");
 
             const idCell = document.createElement('td');
@@ -20,15 +26,18 @@ async function getPost() {
             const bodyCell = document.createElement('td');
             bodyCell.textContent = e.body;
             row.appendChild(bodyCell)
-            body.appendChild(row);
+
+            table.appendChild(row)
+
+            document.body.appendChild(table);
         });
-    } catch(err){
+    } catch (err) {
         console.log("Error: ", err)
     }
-    
+
 };
 
-btn.addEventListener('click',()=>{
+btn.addEventListener('click', () => {
     getPost()
-    
+
 })
