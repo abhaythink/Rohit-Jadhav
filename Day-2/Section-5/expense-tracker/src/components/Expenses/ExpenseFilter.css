@@ -1,0 +1,47 @@
+.expense-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.expense-filter__control {
+  width: 70%;
+  display: flex;
+  align-items: center;
+    justify-content: space-around;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expense-filter__control label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.expense-filter__control select {
+      max-width: 18rem;
+  /* width: 100%;  */
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expense-filter__control select:focus {
+  outline: none;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 4px rgba(92, 107, 192, 0.5);
+}
+
+.expense-filter__control select option {
+  padding: 0.6rem;
+}
