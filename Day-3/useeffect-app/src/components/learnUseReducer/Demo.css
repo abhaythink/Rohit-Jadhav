@@ -1,0 +1,64 @@
+/* Container for the whole Demo */
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style for the count (heading) */
+.count {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Active state for buttons */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Specific styling for increment and decrement buttons */
+.inc-btn {
+  background-color: #3498db;
+}
+
+.dec-btn {
+  background-color: #e74c3c;
+}
+
+.inc-btn:hover {
+  background-color: #2980b9;
+}
+
+.dec-btn:hover {
+  background-color: #c0392b;
+}
