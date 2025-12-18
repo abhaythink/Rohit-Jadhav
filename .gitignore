@@ -1,28 +1,14 @@
-# Node modules
+# Node
 node_modules/
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+**/node_modules/
 
-# Environment variables
+# React
+build/
+dist/
+
+# Logs
+*.log
+
+# Env files
 .env
 .env.local
-.env.*.local
-
-# Build output
-dist/
-build/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-
-# Optional npm cache
-.npm
