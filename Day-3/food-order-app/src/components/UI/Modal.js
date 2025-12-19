@@ -12,7 +12,7 @@ const portalElement = document.getElementById("overlays");
 const Modal = (props) => {
   return (
     <>
-    {ReactDom.createPortal(<Backdrop onClose={props.close}/>, portalElement)}
+    {ReactDom.createPortal(<Backdrop onClose={props.onClose}/>, portalElement)}
     {ReactDom.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portalElement)}
     </>
   
